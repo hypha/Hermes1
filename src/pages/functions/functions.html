@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Functions > Hair Dryer
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- Header -->
+   <ion-row>
+     <ion-col>
+       <strong>Dir</strong>
+     </ion-col>
+     <ion-col>
+       <strong>Partner</strong>
+     </ion-col>
+     <ion-col>
+       <strong>Function</strong>
+     </ion-col>
+     <ion-col>
+       <strong>Weight</strong>
+     </ion-col>
+   </ion-row>
+
+   <!-- Row -->
+   <ion-row *ngFor="let number of functions">
+     <ion-col>
+      <ion-icon name="arrow-forward"></ion-icon>
+     </ion-col>
+     <ion-col>
+       Wet Hair {{number}}
+     </ion-col>
+     <ion-col>
+       Dries
+     </ion-col>
+     <ion-col>
+      10
+     </ion-col>
+   </ion-row>
+
+
+</ion-content>
